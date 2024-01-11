@@ -1,35 +1,47 @@
-<form class="form">
-  <label>
-    Delay (ms)
-    <input type="number" name="delay" required />
-  </label>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-  <fieldset>
-    <legend>State</legend>
-    <label>
-      <input
-        class="visually-hidden"
-        type="radio"
-        name="state"
-        value="fulfilled"
-        required
-      />
-      <span class="radio-btn"></span>
-      Fulfilled
-    </label>
-    <label>
-      <input
-        class="visually-hidden"
-        type="radio"
-        name="state"
-        value="rejected"
-        required
-      />
-      <span class="radio-btn"></span>
-      Rejected
-    </label>
-  </fieldset>
+  <body>
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
 
-  <button type="submit">Create notification</button>
-</form>
-<script type="module" src="./js/2-snackbar.js"></script>
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
+          <span class="radio-btn"></span>
+          Fulfilled
+        </label>
+        <label>
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="state"
+            value="rejected"
+            required
+          />
+          <span class="radio-btn"></span>
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
